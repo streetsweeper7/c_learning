@@ -6,6 +6,7 @@
 */
 #include <stdio.h>
 
+
 #define MAXLINE     (1000)      /* Maximum input line length */
 #define LINE_LEN       (3)      /* This is the number of characters to the next
                                     tab stop */

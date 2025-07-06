@@ -4,7 +4,7 @@
 * Description:
 * This program replaces tabs in the input with the proper number of blanks
 * to space to the next tab stop. There's a maximum number of tab stops
-* based on tha maximum size of the input 
+* based on the maximum size of the input 
 * passed as input.
 */
 #include <stdio.h>
