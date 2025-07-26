@@ -69,7 +69,6 @@ void squeeze(char s1[], const char s2[])
 {
 
     int i, j;
-    int c;
     in_str_et in_s = NO;
 
     for (i = j = 0; s1[i] != '\0'; ++i)
