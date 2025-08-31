@@ -47,13 +47,17 @@ int any(const char s1[], const char s2[])
 {
 
     int lowest_index = -1;
+    int index_temp   = -1;
     int i            = 0;
 
     while (s2[i] != '\0')
     {
     
-        lowest_index = find(s2[i], s1);
-        if (lowest_index > -1) break;
+        index_temp   = find(s2[i], s1);
+        if (index_temp > -1 && ((lowest_index == -1) || index_temp < lowest_index))
+        {
+            lowest_index = index_temp;
+        }
 
         ++i;
     }
