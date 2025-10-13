@@ -88,8 +88,20 @@ int main()
                         double arg = pop();
                         push(sin(arg));
                     break;
+                    case EXP:
+                        // Handle sin
+                        double exp_arg = pop();
+                        push(exp(exp_arg));
+                    break;
+                    case POW:
+                        // Handle sin
+                        double exponent = pop();
+                        double base     = pop();
+                        push(pow(base, exponent));
+                    break;
 
                     default:
+                        // Handle default cases
                     break;
                 }
             break;
@@ -299,6 +311,10 @@ fn_type_et get_fn_type(char fn[])
         retval = DUPLICATE;
     else if (strcmp(fn, "sin") == 0)
         retval = SIN;
+    else if (strcmp(fn, "exp") == 0)
+        retval = EXP;
+    else if (strcmp(fn, "pow") == 0)
+        retval = POW;
     else
         retval = FN_INVALID;
 
